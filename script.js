@@ -35,51 +35,41 @@ function whoWonX(){
         p1Score++
     score.innerText = `Score: ${p1Score}`
     console.log(score.innerText)
-    tie = false;
     }
     else if(b1.value ==="✖" && b2.value==="✖" && b3.value==="✖"){ 
         p1Score++
     score.innerText = `Score: ${p1Score}`
     console.log(score.innerText)
-    tie = false;
     }
     else if(c1.value ==="✖" && c2.value==="✖" && c3.value==="✖"){ 
         p1Score++
     score.innerText = `Score: ${p1Score}`
     console.log(score.innerText)
-    tie = false;
     }
     else if(a1.value ==="✖" && b1.value==="✖" && c1.value==="✖"){ 
         p1Score++
     score.innerText = `Score: ${p1Score}`
     console.log(score.innerText)
-    tie = false;
     }
     else if(a2.value ==="✖" && b2.value==="✖" && c2.value==="✖"){ 
         p1Score++
     score.innerText = `Score: ${p1Score}`
     console.log(score.innerText)
-    tie = false;
     }
     else if(a3.value ==="✖" && b3.value==="✖" && c3.value==="✖"){ 
         p1Score++
     score.innerText = `Score: ${p1Score}`
     console.log(score.innerText)
-    tie = false;
     }
     else if(a1.value ==="✖" && b2.value==="✖" && c3.value==="✖"){ 
         p1Score++
     score.innerText = `Score: ${p1Score}`
     console.log(score.innerText)
-    tie = false;
     }
     else if(c1.value ==="✖" && b2.value==="✖" && a3.value==="✖"){ 
         p1Score++
     score.innerText = `Score: ${p1Score}`
     console.log(score.innerText)
-    tie = false;
-    } else {
-        return isTie();
     }
 }
 function calculatePoints(){
@@ -95,59 +85,50 @@ function whoWonO() {
         console.log("Player 2 Won!");
         p2score++;
         player2Score.textContent = `Score: ${p2score}`;
-        tie = false;
     } 
     else if (b1.value == "◯" && b2.value == "◯" && b3.value == "◯") {
         console.log("Player 2 Won!");
         p2score++;
         player2Score.textContent = `Score: ${p2score}`;
-        tie = false;
     }
     else if (c1.value == "◯" && c2.value == "◯" && c3.value == "◯") {
         console.log("Player 2 Won!");
         p2score++;
         player2Score.textContent = `Score: ${p2score}`;
-        tie = false;
     }
     else if (a1.value == "◯" && b1.value == "◯" && c1.value == "◯") {
         console.log("Player 2 Won!");
         p2score++;
         player2Score.textContent = `Score: ${p2score}`;
-        tie = false;
     }
     else if (a2.value == "◯" && b2.value == "◯" && c2.value == "◯") {
         console.log("Player 2 Won!");
         p2score++;
         player2Score.textContent = `Score: ${p2score}`;
-        tie = false;
     }
     else if (a3.value == "◯" && b3.value == "◯" && c3.value == "◯") {
         console.log("Player 2 Won!");
         p2score++;
         player2Score.textContent = `Score: ${p2score}`;
-        tie = false;
     }
     else if (a1.value == "◯" && b2.value == "◯" && c3.value == "◯") {
         console.log("Player 2 Won!");
         p2score++;
         player2Score.textContent = `Score: ${p2score}`;
-        tie = false;
     }
     else if (a3.value == "◯" && b2.value == "◯" && c1.value == "◯") {
         console.log("Player 2 Won!");
         p2score++;
         player2Score.textContent = `Score: ${p2score}`;
-        tie = false;
-    } else {
-        return tie;
     }
 }
 
 function isTie() {
     let tiescore = 0;
     let tiep = document.getElementById("tiescore");
-    if (tie = true) {
+    if ((a1.value == "✖" || a1.value == "◯") && (a2.value == "✖" || a2.value == "◯") && (a3.value == "✖" || a3.value == "◯") && (b1.value == "✖" || b1.value == "◯") && (b2.value == "✖" || b2.value == "◯") && (b3.value == "✖" || b3.value == "◯") && (c1.value == "✖" || c1.value == "◯") && (c2.value == "✖" || c2.value == "◯") && (c3.value == "✖" || c3.value == "◯")) {
         tiescore++;
+        console.log("Tie!")
         tiep.textContent = `Tie: ${tiescore}`;
         gameReset();
     }
