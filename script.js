@@ -143,10 +143,11 @@ function isTie() {
   ) {
     let tiescore = 0;
     let tiep = document.getElementById("tiescore");
-    tiescore++;
-    tiep.textContent = `Tie: ${tiescore}`;
-    gameReset();
-  }
+        tiescore++;
+        console.log("Tie!")
+        tiep.textContent = `Tie: ${tiescore}`;
+        gameReset();
+    }
 }
 
 // Function to reset gameboard
