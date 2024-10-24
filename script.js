@@ -36,49 +36,55 @@ function whoWonX(){
     if(a1.value ==="✖" && a2.value==="✖" && a3.value==="✖"){ 
         p1Score++
     score.innerText = `Score: ${p1Score}`
-    console.log(Score.innerText)
+    console.log(score.innerText)
+    gameReset();
     }
     else if(b1.value ==="✖" && b2.value==="✖" && b3.value==="✖"){ 
         p1Score++
     score.innerText = `Score: ${p1Score}`
-    console.log(Score.innerText)
+    console.log(score.innerText)
+    gameReset();
     }
     else if(c1.value ==="✖" && c2.value==="✖" && c3.value==="✖"){ 
         p1Score++
     score.innerText = `Score: ${p1Score}`
-    console.log(Score.innerText)
+    console.log(score.innerText)
+    gameReset();
     }
-    else if(a1.value ==="X" && b1.value==="✖" && c1.value==="✖"){ 
+    else if(a1.value ==="✖" && b1.value==="✖" && c1.value==="✖"){ 
         p1Score++
     score.innerText = `Score: ${p1Score}`
-    console.log(Score.innerText)
+    console.log(score.innerText)
+    gameReset();
     }
     else if(a2.value ==="✖" && b2.value==="✖" && c2.value==="✖"){ 
         p1Score++
     score.innerText = `Score: ${p1Score}`
-    console.log(Score.innerText)
+    console.log(score.innerText)
+    gameReset();
     }
     else if(a3.value ==="✖" && b3.value==="✖" && c3.value==="✖"){ 
         p1Score++
     score.innerText = `Score: ${p1Score}`
-    console.log(Score.innerText)
+    console.log(score.innerText)
+    gameReset();
     }
     else if(a1.value ==="✖" && b2.value==="✖" && c3.value==="✖"){ 
         p1Score++
     score.innerText = `Score: ${p1Score}`
-    console.log(Score.innerText)
+    console.log(score.innerText)
+    gameReset();
     }
     else if(c1.value ==="✖" && b2.value==="✖" && a3.value==="✖"){ 
         p1Score++
     score.innerText = `Score: ${p1Score}`
-    console.log(Score.innerText)
+    console.log(score.innerText)
+    gameReset();
     }
 }
 function calculatePoints(){
 whoWonX();
 whoWonO();
-
-
 }
 
 // Functions to indicate winner
@@ -88,42 +94,49 @@ function whoWonO() {
         console.log("Player 2 Won!");
         p2score++;
         player2Score.textContent = `Score: ${p2score}`;
-    
+        gameReset();
     } 
     else if (b1.value == "◯" && b2.value == "◯" && b3.value == "◯") {
         console.log("Player 2 Won!");
         p2score++;
         player2Score.textContent = `Score: ${p2score}`;
+        gameReset();
     }
     else if (c1.value == "◯" && c2.value == "◯" && c3.value == "◯") {
         console.log("Player 2 Won!");
         p2score++;
         player2Score.textContent = `Score: ${p2score}`;
+        gameReset();
     }
     else if (a1.value == "◯" && b1.value == "◯" && c1.value == "◯") {
         console.log("Player 2 Won!");
         p2score++;
         player2Score.textContent = `Score: ${p2score}`;
+        gameReset();
     }
     else if (a2.value == "◯" && b2.value == "◯" && c2.value == "◯") {
         console.log("Player 2 Won!");
         p2score++;
         player2Score.textContent = `Score: ${p2score}`;
+        gameReset();
     }
     else if (a3.value == "◯" && b3.value == "◯" && c3.value == "◯") {
         console.log("Player 2 Won!");
         p2score++;
         player2Score.textContent = `Score: ${p2score}`;
+        gameReset();
     }
     else if (a1.value == "◯" && b2.value == "◯" && c3.value == "◯") {
         console.log("Player 2 Won!");
         p2score++;
         player2Score.textContent = `Score: ${p2score}`;
+        gameReset();
     }
     else if (a3.value == "◯" && b2.value == "◯" && c1.value == "◯") {
         console.log("Player 2 Won!");
         p2score++;
         player2Score.textContent = `Score: ${p2score}`;
+        gameReset();
     }
 }
 
