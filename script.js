@@ -1,14 +1,14 @@
 let turn = 1;
 
-// Functions to indicate player turn
+// Function to indicate player turn
 function playerTurn(inputBox) {
-    if (inputBox == " ") {
-        if (turn == 1) {
-            inputBox.innerHTML = <ion-icon name="close-outline"></ion-icon>;
+    if (inputBox.value === "") {
+        if (turn === 1) {
+            inputBox.value = `✖`;
             console.log("X");
             turn = 0;
         } else {
-            inputBox.innerHTML = <ion-icon name="ellipse-outline"></ion-icon>;
+            inputBox.value = `◯`;
             console.log("0");
             turn = 1;
         }
@@ -16,7 +16,7 @@ function playerTurn(inputBox) {
     
 }
 
-
+// Function to reset gameboard
 function gameReset() {
     let allInputs = document.querySelectorAll('input[type="button"]')
     allInputs.value = "";
