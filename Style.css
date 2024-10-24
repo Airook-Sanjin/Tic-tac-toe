@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+  }
+  body{
+    background-color: hsl(32, 55%, 86%);
+  }
+  .game-container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  input{
+    width: 50px;
+    height: 50px;
+  }
+  .playerscore{
+    display: flex;
+    gap:50px;
+    background-color: hsl(148, 14%, 55%);
+    padding: 2%;
+    border-radius: 20px;
+  }
+  .game{
+    display: flex;
+    padding: 9%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:5px;
+    justify-content: center;
+    margin-top: 1%;
+    background-color: hsl(36, 100%, 90%);
+    border-radius: 30px;
+    width: 30%;
+    
+  }
