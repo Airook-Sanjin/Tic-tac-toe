@@ -144,7 +144,7 @@ function isTie() {
     let tiep = document.getElementById("tiescore");
         tiescore++;
         console.log("Tie!")
-        tiep.textContent = `Tie: ${tiescore}`;
+        tiep.textContent = `${tiescore}`;
         gameReset();
     }
 }
