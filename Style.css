@@ -15,6 +15,7 @@
   input{
     width: 50px;
     height: 50px;
+    background-color: transparent;
   }
   .playerscore{
     display: flex;
@@ -25,14 +26,31 @@
   }
   .game{
     display: flex;
-    padding: 9%;
-    flex-direction: row;
-    flex-wrap: wrap;
+    padding: 2%;
+    flex-direction: column;
+    flex-wrap: nowrap;
     gap:5px;
     justify-content: center;
+    align-items: center;
     margin-top: 1%;
     background-color: hsl(36, 100%, 90%);
     border-radius: 30px;
     width: 30%;
-    
+    height:300px;
   }
+  .row{
+    display: flex;
+    gap:5px;
+  }
+  #rst-btn{
+    padding: 5%;
+    border-radius: 20px;
+    background-color:hsl(148, 14%, 55%);
+  }
+  #rst-btn:hover{
+    transform: translateY(-3px);
+    transition: 1s;
+    background-color:hsl(148, 14%, 65%);
+
+  }
+  

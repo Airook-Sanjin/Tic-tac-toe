@@ -21,8 +21,14 @@ function whoWon() {
 }
 
 // Function to reset gameboard
+///
+resetbtn = document.getElementById("rst-btn");
+resetbtn.addEventListener("click", gameReset)
+
 function gameReset() {
     let allInputs = document.querySelectorAll('input[type="button"]')
-    allInputs.value = "";
+    allInputs.forEach(input => {
+        input.value = "";
+    });
     turn = 1;
 }
