@@ -13,7 +13,11 @@ function playerTurn(inputBox) {
             turn = 1;
         }
     }
-    
+}
+
+// Functions to indicate winner
+function whoWon() {
+
 }
 
 // Function to reset gameboard
