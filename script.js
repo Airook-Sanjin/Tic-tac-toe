@@ -71,8 +71,6 @@ function whoWonX() {
     score.innerText = `Score: ${p1Score}`;
     console.log(score.innerText);
     gameReset();
-  } else {
-    return isTie();
   }
 }
 function calculatePoints() {
@@ -124,8 +122,6 @@ function whoWonO() {
     p2score++;
     player2Score.textContent = `Score: ${p2score}`;
     gameReset();
-  } else {
-    return tie;
   }
 }
 
