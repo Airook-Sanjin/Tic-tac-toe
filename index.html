@@ -12,32 +12,31 @@
         <section class="playerscore">
             <div class="playerone">
                 <h4>Player1</h4>
-                <p>Score : </p>
+                <p id="p1score">Score: 0</p>
             </div>
             <div class="playertwo">
                 <h4>Player2</h4>
-                <p>Score : </p>
+                <p id="p2score">Score: 0</p>
             </div>
         </section>
         <section class ="game">
-        <div class="row firstrow">
-        <input id = "a1" type="button" value="" onclick="playerTurn(this)">
-        <input id = "a2" type="button" value="" onclick="playerTurn(this)">
-        <input id = "a3" type="button" value="" onclick="playerTurn(this)">
-    </div>
-    <div class="row secondrow">
-        <input id = "b1" type="button" value="" onclick="playerTurn(this)">
-        <input id = "b2" type="button" value="" onclick="playerTurn(this)">
-        <input id = "b3" type="button" value="" onclick="playerTurn(this)">
-    </div>
-    <div class="row thirdrow">
-        <input id = "c1" type="button" value="" onclick="playerTurn(this)">
-        <input id = "c2" type="button" value="" onclick="playerTurn(this)">
-        <input id = "c3" type="button" value="" onclick="playerTurn(this)">
-    </div>
-    <div class="row"><button id="rst-btn">Reset Board</button></div>
-    
-</section>
+            <div class="row firstrow">
+                <input id="a1" type="button" value="" onclick="playerTurn(this); whoWonO()">
+                <input id="a2" type="button" value="" onclick="playerTurn(this); whoWonO()">
+                <input id="a3" type="button" value="" onclick="playerTurn(this); whoWonO()">
+            </div>
+            <div class="row secondrow">
+                <input id = "b1" type="button" value="" onclick="playerTurn(this); whoWonO()">
+                <input id = "b2" type="button" value="" onclick="playerTurn(this); whoWonO()">
+                <input id = "b3" type="button" value="" onclick="playerTurn(this); whoWonO()">
+            </div>
+            <div class="row thirdrow">
+                <input id = "c1" type="button" value="" onclick="playerTurn(this); whoWonO()">
+                <input id = "c2" type="button" value="" onclick="playerTurn(this); whoWonO()">
+                <input id = "c3" type="button" value="" onclick="playerTurn(this); whoWonO()">
+            </div>
+            <div class="row"><button id="rst-btn">Reset Board</button></div>
+        </section>
     </section>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
