@@ -13,52 +13,7 @@ b2 = document.getElementById("b2");
 b3 = document.getElementById("b3");
 let score = document.getElementById("p1score");
 let player2Score=document.getElementById("p2score")
-
-
-// Functions to indicate winner
-let p2score = 0;
-function whoWonO() {
-    let player2Score = document.getElementById("p2score");
-    if (a1.value == "◯" && a2.value == "◯" && a3.value == "◯") {
-        console.log("Player 2 Won!");
-        p2score++;
-        player2Score.textContent = `Score: ${p2score}`;
-    } 
-    else if (b1.value == "◯" && b2.value == "◯" && b3.value == "◯") {
-        console.log("Player 2 Won!");
-        p2score++;
-        player2Score.textContent = `Score: ${p2score}`;
-    }
-    else if (c1.value == "◯" && c2.value == "◯" && c3.value == "◯") {
-        console.log("Player 2 Won!");
-        p2score++;
-        player2Score.textContent = `Score: ${p2score}`;
-    }
-    else if (a1.value == "◯" && b1.value == "◯" && c1.value == "◯") {
-        console.log("Player 2 Won!");
-        p2score++;
-        player2Score.textContent = `Score: ${p2score}`;
-    }
-    else if (a2.value == "◯" && b2.value == "◯" && c2.value == "◯") {
-        console.log("Player 2 Won!");
-        p2score++;
-        player2Score.textContent = `Score: ${p2score}`;
-    }
-    else if (a3.value == "◯" && b3.value == "◯" && c3.value == "◯") {
-        console.log("Player 2 Won!");
-        p2score++;2
-        player2Score.textContent = `Score: ${p2score}`;
-    }
-    else if (a1.value == "◯" && b2.value == "◯" && c3.value == "◯") {
-        console.log("Player 2 Won!");
-        p2score++;
-        player2Score.textContent = `Score: ${p2score}`;
-    }
-    else if (a3.value == "◯" && b2.value == "◯" && c1.value == "◯") {
-        console.log("Player 2 Won!");
-        p2score++;
-        player2Score.textContent = `Score: ${p2score}`;
-// Functions to indicate player turn
+let tie;
 
 // Function to indicate player turn
 function playerTurn(inputBox) {
@@ -72,7 +27,6 @@ function playerTurn(inputBox) {
             console.log("0");
             turn = 1;
         }
-        
     }
 }
 
@@ -80,49 +34,58 @@ function whoWonX(){
     if(a1.value ==="✖" && a2.value==="✖" && a3.value==="✖"){ 
         p1Score++
     score.innerText = `Score: ${p1Score}`
-    console.log(Score.innerText)
+    console.log(score.innerText)
+    tie = false;
     }
     else if(b1.value ==="✖" && b2.value==="✖" && b3.value==="✖"){ 
         p1Score++
     score.innerText = `Score: ${p1Score}`
-    console.log(Score.innerText)
+    console.log(score.innerText)
+    tie = false;
     }
     else if(c1.value ==="✖" && c2.value==="✖" && c3.value==="✖"){ 
         p1Score++
     score.innerText = `Score: ${p1Score}`
-    console.log(Score.innerText)
+    console.log(score.innerText)
+    tie = false;
     }
-    else if(a1.value ==="X" && b1.value==="✖" && c1.value==="✖"){ 
+    else if(a1.value ==="✖" && b1.value==="✖" && c1.value==="✖"){ 
         p1Score++
     score.innerText = `Score: ${p1Score}`
-    console.log(Score.innerText)
+    console.log(score.innerText)
+    tie = false;
     }
     else if(a2.value ==="✖" && b2.value==="✖" && c2.value==="✖"){ 
         p1Score++
     score.innerText = `Score: ${p1Score}`
-    console.log(Score.innerText)
+    console.log(score.innerText)
+    tie = false;
     }
     else if(a3.value ==="✖" && b3.value==="✖" && c3.value==="✖"){ 
         p1Score++
     score.innerText = `Score: ${p1Score}`
-    console.log(Score.innerText)
+    console.log(score.innerText)
+    tie = false;
     }
     else if(a1.value ==="✖" && b2.value==="✖" && c3.value==="✖"){ 
         p1Score++
     score.innerText = `Score: ${p1Score}`
-    console.log(Score.innerText)
+    console.log(score.innerText)
+    tie = false;
     }
     else if(c1.value ==="✖" && b2.value==="✖" && a3.value==="✖"){ 
         p1Score++
     score.innerText = `Score: ${p1Score}`
-    console.log(Score.innerText)
+    console.log(score.innerText)
+    tie = false;
+    } else {
+        return isTie();
     }
 }
 function calculatePoints(){
 whoWonX();
 whoWonO();
-
-
+isTie();
 }
 
 // Functions to indicate winner
@@ -132,48 +95,65 @@ function whoWonO() {
         console.log("Player 2 Won!");
         p2score++;
         player2Score.textContent = `Score: ${p2score}`;
-    
+        tie = false;
     } 
     else if (b1.value == "◯" && b2.value == "◯" && b3.value == "◯") {
         console.log("Player 2 Won!");
         p2score++;
         player2Score.textContent = `Score: ${p2score}`;
+        tie = false;
     }
     else if (c1.value == "◯" && c2.value == "◯" && c3.value == "◯") {
         console.log("Player 2 Won!");
         p2score++;
         player2Score.textContent = `Score: ${p2score}`;
+        tie = false;
     }
     else if (a1.value == "◯" && b1.value == "◯" && c1.value == "◯") {
         console.log("Player 2 Won!");
         p2score++;
         player2Score.textContent = `Score: ${p2score}`;
+        tie = false;
     }
     else if (a2.value == "◯" && b2.value == "◯" && c2.value == "◯") {
         console.log("Player 2 Won!");
         p2score++;
         player2Score.textContent = `Score: ${p2score}`;
+        tie = false;
     }
     else if (a3.value == "◯" && b3.value == "◯" && c3.value == "◯") {
         console.log("Player 2 Won!");
         p2score++;
         player2Score.textContent = `Score: ${p2score}`;
+        tie = false;
     }
     else if (a1.value == "◯" && b2.value == "◯" && c3.value == "◯") {
         console.log("Player 2 Won!");
         p2score++;
         player2Score.textContent = `Score: ${p2score}`;
+        tie = false;
     }
     else if (a3.value == "◯" && b2.value == "◯" && c1.value == "◯") {
         console.log("Player 2 Won!");
         p2score++;
         player2Score.textContent = `Score: ${p2score}`;
+        tie = false;
+    } else {
+        return tie;
     }
 }
 
+function isTie() {
+    let tiescore = 0;
+    let tiep = document.getElementById("tiescore");
+    if (tie = true) {
+        tiescore++;
+        tiep.textContent = `Tie: ${tiescore}`;
+        gameReset();
+    }
+}
 
 // Function to reset gameboard
-///
 resetbtn = document.getElementById("rst-btn");
 resetbtn.addEventListener("click", gameReset)
 
