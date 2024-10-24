@@ -159,4 +159,5 @@ function gameReset() {
     input.value = "";
   });
   turn = 1;
+  whosTurn.textContent = "It is Player 1's turn."
 }
