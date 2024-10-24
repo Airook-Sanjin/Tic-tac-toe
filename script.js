@@ -21,12 +21,12 @@ function playerTurn(inputBox) {
   if (inputBox.value === "") {
     if (turn === 1) {
         inputBox.value = `✖`;
-        whosTurn.textContent = "It is Player 1's turn."
+        whosTurn.textContent = "It is Player 2's turn."
         console.log("X");
         turn = 0;
     } else {
         inputBox.value = `◯`;
-        whosTurn.textContent = "It is Player 2's turn."
+        whosTurn.textContent = "It is Player 1's turn."
         console.log("0");
         turn = 1;
     }
