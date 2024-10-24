@@ -22,22 +22,20 @@ a3 = document.getElementById("a3");
 
 
 // Functions to indicate winner
-p2score = 0;
+let p2score = 0;
 function whoWonO() {
     let player2Score = document.getElementById("p2score");
     if (a1.value == "◯" && a2.value == "◯" && a3.value == "◯") {
         console.log("Player 2 Won!");
         p2score++;
         player2Score.textContent = `Score: ${p2score}`;
-        let winner = document.createElement("p");
-        winner.textContent = "Player 2 Won!"
     } 
-    else if (b1 == "◯" && b2 == "◯" && b3 == "◯") {
+    else if (b1.value == "◯" && b2.value == "◯" && b3.value == "◯") {
         console.log("Player 2 Won!");
         p2score++;
         player2Score.textContent = `Score: ${p2score}`;
     }
-    else if (c1 == "◯" && c2 == "◯" && c3 == "◯") {
+    else if (c1.value == "◯" && c2.value == "◯" && c3.value == "◯") {
         console.log("Player 2 Won!");
         p2score++;
         player2Score.textContent = `Score: ${p2score}`;
