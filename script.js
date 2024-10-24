@@ -14,18 +14,21 @@ b3 = document.getElementById("b3");
 let score = document.getElementById("p1score");
 let player2Score = document.getElementById("p2score");
 let tie;
+let whosTurn = document.getElementById("player");
 
 // Function to indicate player turn
 function playerTurn(inputBox) {
   if (inputBox.value === "") {
     if (turn === 1) {
-      inputBox.value = `✖`;
-      console.log("X");
-      turn = 0;
+        inputBox.value = `✖`;
+        whosTurn.textContent = "It is Player 1's turn."
+        console.log("X");
+        turn = 0;
     } else {
-      inputBox.value = `◯`;
-      console.log("0");
-      turn = 1;
+        inputBox.value = `◯`;
+        whosTurn.textContent = "It is Player 2's turn."
+        console.log("0");
+        turn = 1;
     }
   }
 }
