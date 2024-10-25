@@ -19,7 +19,7 @@
     background-color: transparent;
     
   }
-  .Scoreboard{
+  .scoreboard{
     display: flex;
     flex-direction: column;
     background-color: hsl(148, 14%, 55%);
