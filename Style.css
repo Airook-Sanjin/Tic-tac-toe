@@ -19,16 +19,31 @@
     background-color: transparent;
     
   }
-  .playerscore{
+  .Scoreboard{
     display: flex;
-    align-items:center;
-    gap:50px;
+    flex-direction: column;
     background-color: hsl(148, 14%, 55%);
-    padding: 2%;
+    padding: 1%;
+    gap:20px;
+    align-items:center;
     border-radius: 20px;
     min-width:40%;
     max-width:80%;
     box-shadow: 0px 4px 4px #00000030, 0px 12px 12px #00000015;
+  }
+  .playerscore{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    gap:50px;
+    border-radius: 20px;
+    padding: 2%;
+    background-color:hsl(148, 14%, 65%);
+    box-shadow: 0px 4px 4px #00000030, 0px 12px 12px #00000015;
+
+  }
+  .scoreboard{
+    
   }
   h3{
     margin: 10px auto;
