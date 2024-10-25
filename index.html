@@ -9,14 +9,19 @@
 <body>
     <section class = "game-container">
         <h3>Tic-Tac-Toe</h3>
-        <section class="playerscore">
+        <section class="Scoreboard">
+            <section class="scoretitle">
+                <h2 class="title">SCORE</h2>
+            </section>
+            <section class="playerscore">
+            
             <div class="playerone">
                 <h4>Player1</h4>
-                <p class = "scores" id="p1score">Score: 0</p>
+                <p class = "scores" id="p1score">0</p>
             </div>
             <div class="playertwo">
                 <h4>Player2</h4>
-                <p class = "scores" id="p2score">Score: 0</p>
+                <p class = "scores" id="p2score">0</p>
             </div>
             <div class="tie">
                 <h4>Tie</h4>
@@ -26,7 +31,8 @@
                 <h4 class = "scores" id = "player">It is Player 1's turn</h4>
                 
             </div>
-        </section>
+        </section></section>
+        
         <section class ="game">
         <div class="row firstrow">
         <input id = "a1" type="button" value="" onclick="playerTurn(this);calculatePoints()">
