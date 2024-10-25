@@ -6,6 +6,7 @@
   }
   body{
     background-color: hsl(32, 55%, 86%);
+    font-family: Arial, Helvetica, sans-serif;
   }
   .game-container{
     display:flex;
@@ -16,41 +17,61 @@
     width: 50px;
     height: 50px;
     background-color: transparent;
+    
   }
   .playerscore{
     display: flex;
+    align-items:center;
     gap:50px;
     background-color: hsl(148, 14%, 55%);
     padding: 2%;
     border-radius: 20px;
+    min-width:40%;
+    max-width:80%;
+    box-shadow: 0px 4px 4px #00000030, 0px 12px 12px #00000015;
+  }
+  h3{
+    margin: 10px auto;
+    font-size:x-large;
+
   }
   .game{
     display: flex;
-    padding: 2%;
     flex-direction: column;
     flex-wrap: nowrap;
+    padding:5%;
     gap:5px;
     justify-content: center;
     align-items: center;
-    margin-top: 1%;
-    background-color: hsl(36, 100%, 90%);
+    margin-top: 5%;
+    background-color: hsl(36, 100%, 94%);
     border-radius: 30px;
-    width: 30%;
+    min-width: 20%;
     height:300px;
+    box-shadow: 0px 4px 4px #00000030, 0px 12px 12px #00000015;
   }
   .row{
     display: flex;
+    
     gap:5px;
   }
-  #rst-btn{
+  input{
+    box-shadow: 0px 4px 4px #00000030, 0px 12px 12px #00000015;
+  }
+  #rst-btn , #rstgame-btn{
+    margin-top:10%;
     padding: 5%;
+    border-width: 0px;
     border-radius: 20px;
     background-color:hsl(148, 14%, 55%);
+    box-shadow: 0px 4px 4px #00000030, 0px 12px 12px #00000015;
   }
-  #rst-btn:hover{
+  #rst-btn:hover , #rstgame-btn:hover{
     transform: translateY(-3px);
     transition: 1s;
     background-color:hsl(148, 14%, 65%);
 
   }
-  
+  .scores{
+    text-align: center;
+  }

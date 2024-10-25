@@ -13,7 +13,7 @@ b2 = document.getElementById("b2");
 b3 = document.getElementById("b3");
 let score = document.getElementById("p1score");
 let player2Score = document.getElementById("p2score");
-let tie;
+let tiescore = 0;
 let whosTurn = document.getElementById("player");
 
 // Function to indicate player turn
@@ -21,11 +21,16 @@ function playerTurn(inputBox) {
   if (inputBox.value === "") {
     if (turn === 1) {
         inputBox.value = `✖`;
+        inputBox.style.fontSize = "30px"
+        inputBox.style.color = "hsl(148, 14%, 55%)"
         whosTurn.textContent = "It is Player 2's turn."
         console.log("X");
         turn = 0;
     } else {
         inputBox.value = `◯`;
+        inputBox.style.color ="#9c807c"
+        inputBox.style.fontSize = "30px"
+        inputBox.style.fontWeight = "bold"
         whosTurn.textContent = "It is Player 1's turn."
         console.log("0");
         turn = 1;
@@ -136,11 +141,11 @@ function isTie() {
     (b1.value === "✖" || b1.value === "◯") &&
     (b2.value === "✖" || b2.value === "◯") &&
     (b3.value === "✖" || b3.value === "◯") &&
-    (c1.value === "✖" || c2.value === "◯") &&
+    (c1.value === "✖" || c1.value === "◯") &&
     (c2.value === "✖" || c2.value === "◯") &&
     (c3.value === "✖" || c3.value === "◯")
   ) {
-    let tiescore = 0;
+    
     let tiep = document.getElementById("tiescore");
         tiescore++;
         console.log("Tie!")
@@ -160,4 +165,15 @@ function gameReset() {
   });
   turn = 1;
   whosTurn.textContent = "It is Player 1's turn."
+}
+resetgame = document.getElementById("rstgame-btn")
+resetgame.addEventListener("click", pointReset);
+function pointReset(){
+    p2score = 0;
+    p1Score = 0;
+    tiescore = 0;
+    score.innerText = `Score: ${p1Score}`;
+    player2Score.textContent = `Score: ${p2score}`;
+    tiep.textContent = `${tiescore}`;
+    gameReset();
 }
