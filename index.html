@@ -12,14 +12,19 @@
         <section class="playerscore">
             <div class="playerone">
                 <h4>Player1</h4>
-                <p id="p1score">Score: 0</p>
+                <p class = "scores" id="p1score">Score: 0</p>
             </div>
             <div class="playertwo">
                 <h4>Player2</h4>
-                <p id="p2score">Score: 0</p>
+                <p class = "scores" id="p2score">Score: 0</p>
             </div>
             <div class="tie">
-                <p id="tiescore">Tie: 0</p>
+                <h4>Tie</h4>
+                <p class = "scores" id="tiescore">0</p>
+            </div>
+            <div class="playerTurn">
+                <h4 class = "scores" id = "player">It is Player 1's turn</h4>
+                
             </div>
         </section>
         <section class ="game">
@@ -38,7 +43,7 @@
         <input id = "c2" type="button" value="" onclick="playerTurn(this);calculatePoints()">
         <input id = "c3" type="button" value="" onclick="playerTurn(this);calculatePoints()">
     </div>
-    <div class="row"><button id="rst-btn">Reset Board</button></div>
+    <div class="row"><button id="rst-btn">Reset Board</button> <button id="rstgame-btn">Reset Game</button> </div>
     
 </section>
     </section>
